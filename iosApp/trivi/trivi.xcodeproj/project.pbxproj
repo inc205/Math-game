@@ -1,0 +1,611 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5F94F97B2A3BA4EE0040776B /* triviApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F94F97A2A3BA4EE0040776B /* triviApp.swift */; };
+		5F94F97D2A3BA4EE0040776B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F94F97C2A3BA4EE0040776B /* ContentView.swift */; };
+		5F94F97F2A3BA4EF0040776B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F94F97E2A3BA4EF0040776B /* Assets.xcassets */; };
+		5F94F9822A3BA4EF0040776B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F94F9812A3BA4EF0040776B /* Preview Assets.xcassets */; };
+		5F94F9842A3BA4EF0040776B /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F94F9832A3BA4EF0040776B /* Persistence.swift */; };
+		5F94F9872A3BA4EF0040776B /* trivi.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5F94F9852A3BA4EF0040776B /* trivi.xcdatamodeld */; };
+		5F94F9922A3BA4EF0040776B /* triviTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F94F9912A3BA4EF0040776B /* triviTests.swift */; };
+		5F94F99C2A3BA4EF0040776B /* triviUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F94F99B2A3BA4EF0040776B /* triviUITests.swift */; };
+		5F94F99E2A3BA4EF0040776B /* triviUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F94F99D2A3BA4EF0040776B /* triviUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5F94F98E2A3BA4EF0040776B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F94F96F2A3BA4EE0040776B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5F94F9762A3BA4EE0040776B;
+			remoteInfo = trivi;
+		};
+		5F94F9982A3BA4EF0040776B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F94F96F2A3BA4EE0040776B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5F94F9762A3BA4EE0040776B;
+			remoteInfo = trivi;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5F94F9772A3BA4EE0040776B /* trivi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = trivi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F94F97A2A3BA4EE0040776B /* triviApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = triviApp.swift; sourceTree = "<group>"; };
+		5F94F97C2A3BA4EE0040776B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5F94F97E2A3BA4EF0040776B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5F94F9812A3BA4EF0040776B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5F94F9832A3BA4EF0040776B /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		5F94F9862A3BA4EF0040776B /* trivi.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = trivi.xcdatamodel; sourceTree = "<group>"; };
+		5F94F9882A3BA4EF0040776B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F94F98D2A3BA4EF0040776B /* triviTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = triviTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F94F9912A3BA4EF0040776B /* triviTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = triviTests.swift; sourceTree = "<group>"; };
+		5F94F9972A3BA4EF0040776B /* triviUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = triviUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F94F99B2A3BA4EF0040776B /* triviUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = triviUITests.swift; sourceTree = "<group>"; };
+		5F94F99D2A3BA4EF0040776B /* triviUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = triviUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5F94F9742A3BA4EE0040776B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F94F98A2A3BA4EF0040776B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F94F9942A3BA4EF0040776B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5F94F96E2A3BA4EE0040776B = {
+			isa = PBXGroup;
+			children = (
+				5F94F9792A3BA4EE0040776B /* trivi */,
+				5F94F9902A3BA4EF0040776B /* triviTests */,
+				5F94F99A2A3BA4EF0040776B /* triviUITests */,
+				5F94F9782A3BA4EE0040776B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5F94F9782A3BA4EE0040776B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5F94F9772A3BA4EE0040776B /* trivi.app */,
+				5F94F98D2A3BA4EF0040776B /* triviTests.xctest */,
+				5F94F9972A3BA4EF0040776B /* triviUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5F94F9792A3BA4EE0040776B /* trivi */ = {
+			isa = PBXGroup;
+			children = (
+				5F94F97A2A3BA4EE0040776B /* triviApp.swift */,
+				5F94F97C2A3BA4EE0040776B /* ContentView.swift */,
+				5F94F97E2A3BA4EF0040776B /* Assets.xcassets */,
+				5F94F9832A3BA4EF0040776B /* Persistence.swift */,
+				5F94F9882A3BA4EF0040776B /* Info.plist */,
+				5F94F9852A3BA4EF0040776B /* trivi.xcdatamodeld */,
+				5F94F9802A3BA4EF0040776B /* Preview Content */,
+			);
+			path = trivi;
+			sourceTree = "<group>";
+		};
+		5F94F9802A3BA4EF0040776B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				5F94F9812A3BA4EF0040776B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5F94F9902A3BA4EF0040776B /* triviTests */ = {
+			isa = PBXGroup;
+			children = (
+				5F94F9912A3BA4EF0040776B /* triviTests.swift */,
+			);
+			path = triviTests;
+			sourceTree = "<group>";
+		};
+		5F94F99A2A3BA4EF0040776B /* triviUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5F94F99B2A3BA4EF0040776B /* triviUITests.swift */,
+				5F94F99D2A3BA4EF0040776B /* triviUITestsLaunchTests.swift */,
+			);
+			path = triviUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5F94F9762A3BA4EE0040776B /* trivi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F94F9A12A3BA4EF0040776B /* Build configuration list for PBXNativeTarget "trivi" */;
+			buildPhases = (
+				5F94F9732A3BA4EE0040776B /* Sources */,
+				5F94F9742A3BA4EE0040776B /* Frameworks */,
+				5F94F9752A3BA4EE0040776B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = trivi;
+			productName = trivi;
+			productReference = 5F94F9772A3BA4EE0040776B /* trivi.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5F94F98C2A3BA4EF0040776B /* triviTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F94F9A42A3BA4EF0040776B /* Build configuration list for PBXNativeTarget "triviTests" */;
+			buildPhases = (
+				5F94F9892A3BA4EF0040776B /* Sources */,
+				5F94F98A2A3BA4EF0040776B /* Frameworks */,
+				5F94F98B2A3BA4EF0040776B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5F94F98F2A3BA4EF0040776B /* PBXTargetDependency */,
+			);
+			name = triviTests;
+			productName = triviTests;
+			productReference = 5F94F98D2A3BA4EF0040776B /* triviTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5F94F9962A3BA4EF0040776B /* triviUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F94F9A72A3BA4EF0040776B /* Build configuration list for PBXNativeTarget "triviUITests" */;
+			buildPhases = (
+				5F94F9932A3BA4EF0040776B /* Sources */,
+				5F94F9942A3BA4EF0040776B /* Frameworks */,
+				5F94F9952A3BA4EF0040776B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5F94F9992A3BA4EF0040776B /* PBXTargetDependency */,
+			);
+			name = triviUITests;
+			productName = triviUITests;
+			productReference = 5F94F9972A3BA4EF0040776B /* triviUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5F94F96F2A3BA4EE0040776B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					5F94F9762A3BA4EE0040776B = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					5F94F98C2A3BA4EF0040776B = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 5F94F9762A3BA4EE0040776B;
+					};
+					5F94F9962A3BA4EF0040776B = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 5F94F9762A3BA4EE0040776B;
+					};
+				};
+			};
+			buildConfigurationList = 5F94F9722A3BA4EE0040776B /* Build configuration list for PBXProject "trivi" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5F94F96E2A3BA4EE0040776B;
+			productRefGroup = 5F94F9782A3BA4EE0040776B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5F94F9762A3BA4EE0040776B /* trivi */,
+				5F94F98C2A3BA4EF0040776B /* triviTests */,
+				5F94F9962A3BA4EF0040776B /* triviUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5F94F9752A3BA4EE0040776B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F94F9822A3BA4EF0040776B /* Preview Assets.xcassets in Resources */,
+				5F94F97F2A3BA4EF0040776B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F94F98B2A3BA4EF0040776B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F94F9952A3BA4EF0040776B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5F94F9732A3BA4EE0040776B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F94F9872A3BA4EF0040776B /* trivi.xcdatamodeld in Sources */,
+				5F94F9842A3BA4EF0040776B /* Persistence.swift in Sources */,
+				5F94F97D2A3BA4EE0040776B /* ContentView.swift in Sources */,
+				5F94F97B2A3BA4EE0040776B /* triviApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F94F9892A3BA4EF0040776B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F94F9922A3BA4EF0040776B /* triviTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F94F9932A3BA4EF0040776B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F94F99C2A3BA4EF0040776B /* triviUITests.swift in Sources */,
+				5F94F99E2A3BA4EF0040776B /* triviUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5F94F98F2A3BA4EF0040776B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5F94F9762A3BA4EE0040776B /* trivi */;
+			targetProxy = 5F94F98E2A3BA4EF0040776B /* PBXContainerItemProxy */;
+		};
+		5F94F9992A3BA4EF0040776B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5F94F9762A3BA4EE0040776B /* trivi */;
+			targetProxy = 5F94F9982A3BA4EF0040776B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		5F94F99F2A3BA4EF0040776B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5F94F9A02A3BA4EF0040776B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5F94F9A22A3BA4EF0040776B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"trivi/Preview Content\"";
+				DEVELOPMENT_TEAM = C26ZHA3GQD;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.inc205.trivi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5F94F9A32A3BA4EF0040776B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"trivi/Preview Content\"";
+				DEVELOPMENT_TEAM = C26ZHA3GQD;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.inc205.trivi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5F94F9A52A3BA4EF0040776B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C26ZHA3GQD;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.inc205.triviTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/trivi.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/trivi";
+			};
+			name = Debug;
+		};
+		5F94F9A62A3BA4EF0040776B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C26ZHA3GQD;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.inc205.triviTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/trivi.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/trivi";
+			};
+			name = Release;
+		};
+		5F94F9A82A3BA4EF0040776B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C26ZHA3GQD;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.inc205.triviUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = trivi;
+			};
+			name = Debug;
+		};
+		5F94F9A92A3BA4EF0040776B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C26ZHA3GQD;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.inc205.triviUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = trivi;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5F94F9722A3BA4EE0040776B /* Build configuration list for PBXProject "trivi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F94F99F2A3BA4EF0040776B /* Debug */,
+				5F94F9A02A3BA4EF0040776B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F94F9A12A3BA4EF0040776B /* Build configuration list for PBXNativeTarget "trivi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F94F9A22A3BA4EF0040776B /* Debug */,
+				5F94F9A32A3BA4EF0040776B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F94F9A42A3BA4EF0040776B /* Build configuration list for PBXNativeTarget "triviTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F94F9A52A3BA4EF0040776B /* Debug */,
+				5F94F9A62A3BA4EF0040776B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F94F9A72A3BA4EF0040776B /* Build configuration list for PBXNativeTarget "triviUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F94F9A82A3BA4EF0040776B /* Debug */,
+				5F94F9A92A3BA4EF0040776B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5F94F9852A3BA4EF0040776B /* trivi.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5F94F9862A3BA4EF0040776B /* trivi.xcdatamodel */,
+			);
+			currentVersion = 5F94F9862A3BA4EF0040776B /* trivi.xcdatamodel */;
+			path = trivi.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 5F94F96F2A3BA4EE0040776B /* Project object */;
+}
