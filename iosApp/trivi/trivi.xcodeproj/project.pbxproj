@@ -16,6 +16,9 @@
 		5F94F9922A3BA4EF0040776B /* triviTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F94F9912A3BA4EF0040776B /* triviTests.swift */; };
 		5F94F99C2A3BA4EF0040776B /* triviUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F94F99B2A3BA4EF0040776B /* triviUITests.swift */; };
 		5F94F99E2A3BA4EF0040776B /* triviUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F94F99D2A3BA4EF0040776B /* triviUITestsLaunchTests.swift */; };
+		5FD5A83A2A4602A200B2881B /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD5A8392A4602A200B2881B /* Configuration.swift */; };
+		5FD5A83C2A4602AE00B2881B /* Feedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD5A83B2A4602AE00B2881B /* Feedback.swift */; };
+		5FD5A83E2A4602BA00B2881B /* Credits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD5A83D2A4602BA00B2881B /* Credits.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		5F94F9972A3BA4EF0040776B /* triviUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = triviUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F94F99B2A3BA4EF0040776B /* triviUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = triviUITests.swift; sourceTree = "<group>"; };
 		5F94F99D2A3BA4EF0040776B /* triviUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = triviUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5FD5A8392A4602A200B2881B /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		5FD5A83B2A4602AE00B2881B /* Feedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feedback.swift; sourceTree = "<group>"; };
+		5FD5A83D2A4602BA00B2881B /* Credits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credits.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,9 @@
 		5F94F9792A3BA4EE0040776B /* trivi */ = {
 			isa = PBXGroup;
 			children = (
+				5FD5A8372A44F81600B2881B /* Models */,
+				5FD5A8382A44F82600B2881B /* Views */,
+				5FD5A8362A44F80A00B2881B /* ViewModels */,
 				5F94F97A2A3BA4EE0040776B /* triviApp.swift */,
 				5F94F97C2A3BA4EE0040776B /* ContentView.swift */,
 				5F94F97E2A3BA4EF0040776B /* Assets.xcassets */,
@@ -133,6 +142,30 @@
 				5F94F99D2A3BA4EF0040776B /* triviUITestsLaunchTests.swift */,
 			);
 			path = triviUITests;
+			sourceTree = "<group>";
+		};
+		5FD5A8362A44F80A00B2881B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		5FD5A8372A44F81600B2881B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5FD5A8382A44F82600B2881B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5FD5A8392A4602A200B2881B /* Configuration.swift */,
+				5FD5A83B2A4602AE00B2881B /* Feedback.swift */,
+				5FD5A83D2A4602BA00B2881B /* Credits.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,8 +299,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F94F9872A3BA4EF0040776B /* trivi.xcdatamodeld in Sources */,
+				5FD5A83A2A4602A200B2881B /* Configuration.swift in Sources */,
+				5FD5A83C2A4602AE00B2881B /* Feedback.swift in Sources */,
 				5F94F9842A3BA4EF0040776B /* Persistence.swift in Sources */,
 				5F94F97D2A3BA4EE0040776B /* ContentView.swift in Sources */,
+				5FD5A83E2A4602BA00B2881B /* Credits.swift in Sources */,
 				5F94F97B2A3BA4EE0040776B /* triviApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
