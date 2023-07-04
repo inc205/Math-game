@@ -17,29 +17,57 @@ struct ContentView: View {
     private var items: FetchedResults<Item>
 
     var body: some View {
-        NavigationView {
-            List {
-                ForEach(items) { item in
-                    NavigationLink {
-                        Text("Item at \(item.timestamp!, formatter: itemFormatter)")
-                    } label: {
-                        Text(item.timestamp!, formatter: itemFormatter)
-                    }
+//        NavigationView {
+//            List {
+//                ForEach(items) { item in
+//                    NavigationLink {
+//                        Text("Item at \(item.timestamp!, formatter: itemFormatter)")
+//                    } label: {
+//                        Text(item.timestamp!, formatter: itemFormatter)
+//                    }
+//                }
+//                .onDelete(perform: deleteItems)
+//            }
+//            .toolbar {
+//                ToolbarItem(placement: .navigationBarTrailing) {
+//                    EditButton()
+//                }
+//                ToolbarItem {
+//                    Button(action: addItem) {
+//                        Label("Add Item", systemImage: "plus")
+//                    }
+//                }
+//            }
+//            Text("Select an item")
+//        }
+        VStack(spacing: 40){
+            HStack{
+                VStack{
+                    Text("Puntaje: 3")
                 }
-                .onDelete(perform: deleteItems)
+                Spacer()
+                Text("Pregunta 3 de 15")
             }
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
+            .padding()
+            
+            ZStack{
+                Color("QuestionBG")
+                Text("9 x 7 = __").font(.title)
+            }
+            .frame(width: 290, height: 110).cornerRadius(30)
+            
+            VStack{
+                HStack{
+                    ResponseButton()
+                    ResponseButton()
                 }
-                ToolbarItem {
-                    Button(action: addItem) {
-                        Label("Add Item", systemImage: "plus")
-                    }
+                HStack{
+                    ResponseButton()
+                    ResponseButton()
                 }
             }
-            Text("Select an item")
         }
+        
     }
 
     private func addItem() {
@@ -84,5 +112,19 @@ private let itemFormatter: DateFormatter = {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+    }
+}
+
+struct ResponseButton: View {
+    var body: some View {
+        Button{
+            print("prueba")
+        }label: {
+            ZStack {
+                Color("OptionBG")
+                Text("21").font(.subheadline).foregroundColor(.primary)
+            }
+            .frame(width: 160, height: 80).cornerRadius(20)
+        }
     }
 }
