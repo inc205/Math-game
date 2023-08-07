@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Trivi</string>
+    <string name="score">Puntaje: %d</string>
+    <string name="reset">Reiniciar</string>
+    <string name="configuration">Configuración</string>
+    <string name="info">Acerca de</string>
+    <string name="configuration_error">Por favor llene todas las opciones</string>
+    <string name="apply">Aplicar</string>
+    <string name="play">Jugar</string>
+    <string name="element_a">Seleccione números</string>
+    <string name="element_b">Seleccione números</string>
+    <string name="operations">Operaciones</string>
+    <string name="how_many_questions">Cuantas preguntas</string>
+</resources>
