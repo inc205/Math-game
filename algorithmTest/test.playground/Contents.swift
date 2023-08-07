@@ -1,9 +1,11 @@
 import UIKit
 
 
+
 struct Question {
     var question:String = ""
-    var checkExisting:String = ""
+//    var checkExisting:String = ""
+    var answered:Bool = false
     var correct:Bool = false
     var options:[Responses]
 }
@@ -15,79 +17,139 @@ struct Responses {
 }
 
 //Test variables
+//var listNumber1 = [2,3,5]
 var listNumber1 = [2,3,5]
-var listNumber2 = [1,2,3,4,5,6,7,8,9,10,11]
-var listOperations = ["+","-","x","÷"]
+//var listNumber2 = [1,2,3,4,5,6,7,8,9,10,11]
+var listNumber2 = [5,6,11]
+//var listOperations = ["+","-","x","÷"]
+var listOperations = ["x"]
 var numberQuestions = 15
 
 
-func checkExisting(check new:String, inside questions:[Question])-> Bool {
-    return questions.contains{ c in
-        return c.checkExisting == new
-    }
-}
+//func checkExisting(check new:String, inside questions:[Question])-> Bool {
+//    return questions.contains{ c in
+//        return c.checkExisting == new
+//    }
+//}
 
-func buildQuestions(a:[Int], b:[Int], operations:[String], count:Int)->[Question] {
-    
-    var questions = [Question]()
-    
-    repeat {
-        
-        var na = a.randomElement()!
-        var nb = b.randomElement()!
-        var o = operations.randomElement()!
-        var question = ""
-        var existing = ""
-        var re = 0
-        switch o {
-            case "+":
-                re = na + nb
-                question = "\(na) \(o) \(nb)= __"
-                existing = "\(na)\(o)\(nb)=\(re)"
-                break
-            case "-":
-                re = na + nb
-                question = "\(re) \(o) \(na) = __"
-                existing = "\(re)\(o)\(na)=\(nb)"
-                break
-            case "x":
-                re = na * nb
-                question = "\(na) \(o) \(nb) = __"
-                existing = "\(na)\(o)\(nb)=\(re)"
-                break
-            case "÷":
-                re = na * nb
-                question = "\(re) \(o) \(na) = __"
-                existing = "\(re)\(o)\(na)=\(nb)"
-                break
-            default:
-                re = 0
-        }
-        var op = [Responses]()
-        op.append(Responses(result: re,correct: true))
-        for j in 1..<4 {
-            if([1,2].randomElement() == 1){
-                op.append(Responses(result: re+j, correct: false))
-            }else{
-                op.append(Responses(result: re-j, correct: false))
-            }
-        }
-        //print("\(question) \(existing)")
-        //print(checkExisting(check: existing, inside: questions))
-        if(!checkExisting(check: existing, inside: questions)){
-            questions.append(Question(question: question, checkExisting: existing, correct: false, options: op.shuffled()))
-        }
-    } while questions.count < count
-    //print(questions.count)
-    return questions.shuffled()
-}
+//func buildQuestions(a:[Int], b:[Int], operations:[String], count:Int)->[Question] {
+//
+//    var questions = [Question]()
+//
+//    repeat {
+//
+//        var na = a.randomElement()!
+//        var nb = b.randomElement()!
+//        var o = operations.randomElement()!
+//        var question = ""
+//        var existing = ""
+//        var re = 0
+//        switch o {
+//            case "+":
+//                re = na + nb
+//                question = "\(na) \(o) \(nb)= __"
+//                existing = "\(na)\(o)\(nb)=\(re)"
+//                break
+//            case "-":
+//                re = na + nb
+//                question = "\(re) \(o) \(na) = __"
+//                existing = "\(re)\(o)\(na)=\(nb)"
+//                break
+//            case "x":
+//                re = na * nb
+//                question = "\(na) \(o) \(nb) = __"
+//                existing = "\(na)\(o)\(nb)=\(re)"
+//                break
+//            case "÷":
+//                re = na * nb
+//                question = "\(re) \(o) \(na) = __"
+//                existing = "\(re)\(o)\(na)=\(nb)"
+//                break
+//            default:
+//                re = 0
+//        }
+//        var op = [Responses]()
+//        op.append(Responses(result: re,correct: true))
+//        for j in 1..<4 {
+//            if([1,2].randomElement() == 1){
+//                op.append(Responses(result: re+j, correct: false))
+//            }else{
+//                op.append(Responses(result: re-j, correct: false))
+//            }
+//        }
+//        //print("\(question) \(existing)")
+//        //print(checkExisting(check: existing, inside: questions))
+//        if(!checkExisting(check: existing, inside: questions)){
+////            questions.append(Question(question: question, checkExisting: existing, correct: false, options: op.shuffled()))
+//            questions.append(Question(question: question, answered: false, correct: false, options: op.shuffled()))
+//        }
+//    } while questions.count < count
+//    //print(questions.count)
+//    return questions.shuffled()
+//}
 
 
-var temp = buildQuestions(a: listNumber1, b: listNumber2, operations: listOperations, count: numberQuestions)
+//var temp = buildQuestions(a: listNumber1, b: listNumber2, operations: listOperations, count: numberQuestions)
+var temp = generateQuestions(a: listNumber1, b: listNumber2, operations: listOperations, count: numberQuestions)
 
 for el in temp {
     print(el.question)
     for pr in el.options {
         print("\(pr.result) -> \(pr.correct)")
+    }
+}
+
+
+
+// Method 2
+
+func generateQuestions(a:[Int], b:[Int], operations:[String], count:Int)->[Question] {
+    var question = ""
+    var existing = ""
+    var re = 0
+    var questions = [Question]()
+    
+    for na in a {
+        for nb in b {
+            for o in operations {
+                switch o {
+                    case "+":
+                        re = na + nb
+                        question = "\(na) \(o) \(nb)= __"
+                        break
+                    case "-":
+                        re = na + nb
+                        question = "\(re) \(o) \(na) = __"
+                        break
+                    case "x":
+                        re = na * nb
+                        question = "\(na) \(o) \(nb) = __"
+                        break
+                    case "÷":
+                        re = na * nb
+                        question = "\(re) \(o) \(na) = __"
+                        break
+                    default:
+                        re = 0
+                }
+                
+                var op = [Responses]()
+                op.append(Responses(result: re,correct: true))
+                for j in 1..<4 {
+                    if([1,2].randomElement() == 1){
+                        op.append(Responses(result: re+j, correct: false))
+                    }else{
+                        op.append(Responses(result: re-j, correct: false))
+                    }
+                }
+                questions.append(Question(question: question, answered: false, correct: false, options: op.shuffled()))
+            }
+        }
+    }
+    let ret = questions.shuffled()
+    if ret.count >= count {
+        return Array(ret.prefix(upTo: count))
+    }else{
+        return ret
     }
 }
