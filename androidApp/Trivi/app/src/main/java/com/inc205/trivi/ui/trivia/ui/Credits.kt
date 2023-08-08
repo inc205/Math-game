@@ -1,6 +1,7 @@
 package com.inc205.trivi.ui.trivia.ui
 
 import androidx.compose.foundation.background
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -21,6 +22,8 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.modifier.modifierLocalConsumer
+import androidx.compose.ui.platform.LocalUriHandler
+import androidx.compose.ui.platform.UriHandler
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -77,7 +80,7 @@ fun Credits(vm: QuestionViewModel, nc: NavHostController) {
                 verticalArrangement = Arrangement.spacedBy(5.dp)
             ) {
                 for (me in credits.sortedBy { it.name }) {
-                    ContactElement(me = me)
+                    ContactElement(me = me, LocalUriHandler.current)
                 }
             }
 
@@ -87,12 +90,13 @@ fun Credits(vm: QuestionViewModel, nc: NavHostController) {
 }
 
 @Composable
-fun ContactElement(me: Developer) {
+fun ContactElement(me: Developer, uriHandler: UriHandler) {
     Box(
         modifier = Modifier
             .background(MaterialTheme.colorScheme.tertiary, shape = RoundedCornerShape(16.dp))
             .width(350.dp)
-            .height(60.dp),
+            .height(60.dp)
+            .clickable { uriHandler.openUri("mailto:${me.email}") },
         contentAlignment = Alignment.Center,
 
         ) {
